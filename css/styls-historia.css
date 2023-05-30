@@ -29,8 +29,7 @@ main{
 }
 aside{
     grid-area: aside;
-   
-   ;
+   float: left;
 }
 footer{
     grid-area: footer;
