@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header header header "
+    "main main main main"
+    "main main main main  "
+    "section section section section"
+    "footer footer footer footer"
+    ;
+      background-color: #C9DBB2;
+     
+     
+      
+  }
+  
+  header{
+    grid-area: header;
+  }
+  main{
+    grid-area: main;
+  }
+ section{
+  grid-area: section;
+ }
+ footer{
+  grid-area: footer;
+ }
+ nav{
+  background-image: url(../img/estaa.jpg) ;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: all;
+  opacity: 5.5;
+  
+}
+header h1{
+  text-align: center;
+  text-size-adjust: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 40px;
+  color: white;
+}
+header .contenedor{
+  text-align: right;
+}
