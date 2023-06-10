@@ -1,151 +1,116 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+header {
+  grid-area: header;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FBFFDC;
+  text-align: justify;
+}
+header h1 {
+  text-align: center;
+  text-size-adjust: 10px;
+  font-family: "Arial Narrow Bold";
+  font-size: 40px;
+  color: white;
+}
+header nav {
+  background-image: url(../img/estaa.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: all;
+  opacity: 5.5;
+  font-family: Verdana;
+  color: white;
+}
+
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto/Roboto-Black.ttf);
 }
-
-body{
+body {
   display: grid;
-  grid-template-areas: 
-  "header header header header header header header header"
-  "main main main main main main aside aside"
-  "main main main main main main aside aside"
-  "section section section section section section  aside aside"
-  "footer footer footer footer footer footer footer footer"
-  ;
-    background-color: #C9DBB2;
-    
-   
-    
-}
-header{
-  
-    grid-area: header;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #FBFFDC;
-   text-align: justify;
-}
-    main{
-      grid-area: main;
-    
-      margin: 20px;
-      padding: 20px;
-      float:left
-     
+  grid-template-areas: "header header header header header header header header" "main main main main main main aside aside" "main main main main main main aside aside" "section section section section section section  aside aside" "footer footer footer footer footer footer footer footer";
+  background-color: #C9DBB2;
 }
 
-section{
-  grid-area: section;
-  background-color: #79E0EE;
-  list-style-type: none ;
+main {
+  grid-area: main;
+  margin: 20px;
+  padding: 20px;
 }
-aside{
-  grid-area: aside;
-  background-color: #FBFFDC;
-  margin: 5px;
-  padding: 5px;
-  float:left;
-  
-}
-
-footer {
-  grid-area: footer;
-
+main float:left .contenedor {
   text-align: center;
-  background-color: #FBFFDC;
-  }
-.contenedor2{
+  display: grid;
+}
+main .card {
+  display: grid;
+  margin: 10px 10px 10px;
+  border-radius: 7%;
+  overflow: hidden;
+  background-color: #f1f7f2;
+  grid-column: span span;
+  grid-row: span auto;
+}
+main .contenedor2 {
   max-width: 1000px;
   margin: 20px;
   display: grid;
   grid-gap: 20px;
-  
-  
+  text-align: center;
+}
 
-  text-align: center;
+section {
+  grid-area: section;
+  background-color: #79E0EE;
+  list-style-type: none;
 }
-.contenedor{
-  text-align: center;
-  display: grid;
-    
+
+aside {
+  grid-area: aside;
+  background-color: #FBFFDC;
+  margin: 5px;
+  padding: 5px;
+  float: left;
 }
-.botones a {
+aside .botones a {
   display: block;
   width: 50px;
   height: 50px;
- text-align: center;
+  text-align: center;
   line-height: 10px;
   border-radius: 50%;
   color: #fff;
   text-decoration: none;
   transition: all 0.3s ease;
-  
-
-  
 }
-.botones li {
+aside .botones li {
   display: inline-block;
   margin: 0 10px;
- 
 }
 
-
-  .card{
-    display: grid;
-    margin: 10px 10px 10px;
-    border-radius: 6%;
-    overflow: hidden;
-    background-color: #f1f7f2;
-    grid-column: span span;
-  grid-row: span auto;
-  
-    
-}
-img{
-  width: 100%;
-  image-resolution: 100%;
-  height: 100%;
-
-
-}
-header h1{
+footer {
+  grid-area: footer;
   text-align: center;
-  text-size-adjust: 10px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 40px;
-  color: white;
+  background-color: #FBFFDC;
 }
-header .contenedor{
-  text-align: right;
-}
-aside h2{
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  color: rgb(178, 228, 128);
-}
-footer h4{
-  font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-shadow: black;
-margin: 5px 5px 5px 5px;
-
-}
-main h3{
-  text-align: center;
-  font-family: Roboto;
-  font-size: 30px;
-  color: black;
-}
-nav{
-  background-image: url(../img/estaa.jpg) ;
+footer nav {
+  background-image: url(../img/estaa.jpg);
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: all;
   opacity: 5.5;
-  
+  font-family: Verdana;
+  color: white;
 }
+
+img {
+  width: 100%;
+  image-resolution: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=styls.css.map */
