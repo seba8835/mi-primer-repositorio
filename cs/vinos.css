@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #C9DBB2;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #FBFFDC;
+}
+footer nav {
+  background-image: url(../img/estaa.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: all;
+  opacity: 5.5;
+}
+footer h4 {
+  font-family: Verdana;
+  text-align: center;
+  color: black;
+  text-shadow: 5px white;
+  border-bottom: 6px solid black;
+  border-radius: 50%;
+  font-size: 25px;
+}
+
+header {
+  grid-area: header;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  background-color: #FBFFDC;
+}
+header h1 {
+  text-align: center;
+  text-size-adjust: 10px;
+  font-family: "Arial Narrow Bold";
+  font-size: 40px;
+  color: white;
+}
+header nav {
+  background-image: url(../img/estaa.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: all;
+  opacity: 5.5;
+  font-family: Verdana;
+  color: white;
+  text-shadow: 5px 5px 0 black;
+}
+header nav h2 {
+  text-align: right;
+}
+
+/*# sourceMappingURL=vinos.css.map */

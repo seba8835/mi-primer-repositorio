@@ -11,6 +11,7 @@ body {
 footer {
   grid-area: footer;
   text-align: center;
+  background-color: #FBFFDC;
 }
 footer nav {
   background-image: url(../img/estaa.jpg);
@@ -30,6 +31,7 @@ footer h4 {
 }
 
 header {
+  grid-area: header;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
   background-color: #FBFFDC;
@@ -51,6 +53,9 @@ header nav {
   color: white;
   text-shadow: 5px 5px 0 black;
 }
+header nav h2 {
+  text-align: right;
+}
 
 @font-face {
   font-family: "Roboto";
@@ -61,52 +66,39 @@ body {
   grid-template-areas: "header header header header header header header header" "main main main main main main aside aside" "main main main main main main aside aside" "section section section section section section  aside aside" "footer footer footer footer footer footer footer footer";
 }
 
-header {
-  grid-area: header;
-}
-header .contenedor2 {
-  margin: 5px;
-  grid-gap: 5px;
-  text-align: right;
-  font-family: "roboto";
-  font-size: 20px;
-}
-header h2 {
-  text-align: right;
-}
-
 main {
-  height: 1000px;
-  width: 700px;
   grid-area: main;
+  margin: 20px;
+  padding: 20px;
+}
+main float:left .contenedor {
+  text-align: center;
   display: grid;
-  grid-template-columns: auto auto;
 }
-main .caja {
-  height: 300px;
-  width: 300px;
+main .card {
+  display: grid;
+  margin: 10px 10px 10px;
   border-radius: 7%;
+  overflow: hidden;
   background-color: #f1f7f2;
-  margin: 10px;
+  grid-column: span span;
+  grid-row: span auto;
 }
-main img {
-  width: 200px;
-  image-resolution: 100%;
-  height: 200px;
-  image-orientation: flip;
+main .contenedor2 {
+  max-width: 1000px;
+  margin: 20px;
+  display: grid;
+  grid-gap: 20px;
+  text-align: center;
 }
 
 section {
   grid-area: section;
   list-style-type: none;
-  background-color: antiquewhite;
-  height: 35px;
-  text-align: center;
 }
 
 aside {
   grid-area: aside;
-  background-color: antiquewhite;
   margin: 5px;
   padding: 5px;
   float: left;

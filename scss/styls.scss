@@ -20,51 +20,71 @@
     "section section section section section section  aside aside"
     "footer footer footer footer footer footer footer footer"
     ;
-      background-color: #C9DBB2;
-      
-     
-      
-  }
+       
+       }
+      header{
+        grid-area: header;
+
+.contenedor2{
+
+        margin: 5px;
+        grid-gap: 5px;
+        text-align: right;
+        font-family: "roboto";
+        font-size: 20px;
+        
+       
+      }
+    
+h2{
+  text-align: right;
+}
+      }  
  
       main{
+        height: 1000px;
+        width: 700px;
         grid-area: main;
-      
-        margin: 20px;
-        padding: 20px;
-        float:left
-        .contenedor{
-          text-align: center;
-          display: grid;
-            
-        }
-        .card{
-          display: grid;
-          margin: 10px 10px 10px;
-          border-radius: 7%;
-          overflow: hidden;
-          background-color: #f1f7f2;
-          grid-column: span span;
-        grid-row: span auto;
-        
-          
-      }
-      .contenedor2{
-        max-width: 1000px;
-        margin: 20px;
         display: grid;
-        grid-gap: 20px;
-        text-align: center;
-      }
+        grid-template-columns: auto auto;
+        
+       
+
+        .caja{
+          height: 300px;
+          width: 300px;
+          border-radius: 7%;
+          background-color: #f1f7f2;
+          margin: 10px;
+       
+          }
+          img{
+            width: 200px;
+            image-resolution: 100%;
+            height: 200px;
+            image-orientation: flip;
+            
+          }
+          
+      
   }
   
   section{
     grid-area: section;
-    background-color: #79E0EE;
+    
     list-style-type: none ;
+    background-color: antiquewhite;
+    height: 35px;
+    text-align: center;
+    
+
+    
+
   }
   aside{
     grid-area: aside;
-    background-color: #FBFFDC;
+    background-color: antiquewhite;
+   
     margin: 5px;
     padding: 5px;
     float:left;
@@ -89,29 +109,9 @@
     }
   }
   
-  footer {
-    grid-area: footer;
-  
-    text-align: center;
-    background-color: #FBFFDC;
-    nav{
-      background-image: url(../img/estaa.jpg) ;
-      background-repeat: repeat;
-      background-attachment: fixed;
-      background-position: all;
-      opacity: 5.5;
-     font-family: Verdana;
-     color:white;
-      
-    }
-    }
- 
   
  
-  
-  
-    
-  img{
+   img{
     width: 100%;
     image-resolution: 100%;
     height: 100%;

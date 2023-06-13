@@ -1,10 +1,11 @@
 
 header{
     
-    grid-area: header;
+   
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #FBFFDC;
-   text-align: justify;
+    text-align: justify;
+    background-color:  #FBFFDC;
+    
    h1{
     text-align: center;
     text-size-adjust: 10px;
@@ -19,7 +20,15 @@ header{
     background-position: all;
     opacity: 5.5;
    font-family: Verdana;
-   color:white;
+   color: white;
+   text-shadow: 5px 5px 0 black;
+   
+  
     
   }
+  
+  
+  
 }
+
+
